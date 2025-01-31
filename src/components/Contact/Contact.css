@@ -1,0 +1,133 @@
+/* Container */
+.contact-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.contact-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.contact-container h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-container p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #261bf8;
+    width: 60%;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 16px;
+}
+/* Form Section */
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section .mb-3 {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Input and Textarea Styling */
+input,
+textarea {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 8px rgba(92, 184, 92, 0.5);
+    transform: scale(1.02);
+}
+
+/* Button */
+.btn-primary {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4cae4c;
+    transform: translateY(-5px);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    background-color: #449d44;
+}
+
+/* Success/Failure Toast Message */
+.Toastify__toast {
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 12px 18px;
+}
+
+.Toastify__toast--success {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.Toastify__toast--error {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Toast Notification Style */
+.Toastify__toast-container {
+    font-family: 'Arial', sans-serif;
+}

@@ -1,0 +1,161 @@
+/* Dashboard Section Styling */
+.dashboard-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f4ff, #c9e8ff);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading */
+.dashboard-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003d66;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Health Form Styling */
+.health-form {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    animation: slideInUp 0.8s ease-out;
+}
+
+.health-form label {
+    font-weight: bold;
+    color: #003d66;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.health-form input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007acc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #003d66;
+    background: #f9fcff;
+    transition: all 0.3s ease;
+}
+
+.health-form input:focus {
+    outline: none;
+    border-color: #005f99;
+    box-shadow: 0 0 8px rgba(0, 95, 153, 0.5);
+}
+
+.health-form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007acc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #003d66;
+    background: #f9fcff;
+    transition: all 0.3s ease;
+}
+
+.health-form select:focus {
+    outline: none;
+    border-color: #005f99;
+    box-shadow: 0 0 8px rgba(0, 95, 153, 0.5);
+}
+
+/* Submit Button */
+.health-form button {
+    padding: 10px 20px;
+    background: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.health-form button:hover {
+    background: #005f99;
+    transform: scale(1.05);
+}
+
+/* Health Metrics Summary */
+.health-metrics {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #007acc;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 122, 204, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.health-metrics h3 {
+    margin-bottom: 15px;
+    color: #003d66;
+    font-size: 1.5rem;
+}
+
+.health-metrics p {
+    margin: 5px 0;
+    color: #005f99;
+    font-size: 1rem;
+}
+
+.health-metrics button {
+    padding: 10px 20px;
+    background: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.health-metrics button:hover {
+    background: #005f99;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

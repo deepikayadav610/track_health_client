@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #000000, #000080, #1c1c87, #000033);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.login-container{
+    vertical-align: middle;
+    background-color: #fff;
+    width: 45%;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+.form-section{
+ width: 85%;
+ margin: auto;   
+}

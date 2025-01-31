@@ -1,0 +1,42 @@
+.header-section {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9fe7b2, #9dd1eb, #f1ae9a, #ffffff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s ease infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+}

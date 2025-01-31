@@ -1,0 +1,11 @@
+.Register-container {
+    width: 45%;
+    background-color: #fff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.form-section {
+    width: 85%;
+    margin: auto;
+}
