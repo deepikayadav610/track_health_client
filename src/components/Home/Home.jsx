@@ -1,26 +1,15 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import './Home.css';
 
 const Home = () => {
     const [message, setMessage] = useState('');
-    const apiUrl = import.meta.env.VITE_API_URL; // Using the environment variable for API URL
 
-    // Optional: Add a handler for the "Get Started" button if you want to trigger an API call or something.
+    // Handler for "Get Started" button
     const handleGetStarted = () => {
-        // Example API call to get some data (can be adjusted based on your actual API)
-        axios.get(`${apiUrl}/api/some-endpoint`)
-            .then(response => {
-                setMessage('Welcome to your personal health assistant!');
-                console.log(response.data); // Log the data received from the API
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-                setMessage('There was an error. Please try again later.');
-            });
+        setMessage('Welcome to your personal health assistant!');
     };
 
-    // Optional: Add a handler for the "Learn More" button
+    // Handler for "Learn More" button
     const handleLearnMore = () => {
         setMessage('Here is more information about tracking your health!');
     };
@@ -38,7 +27,7 @@ const Home = () => {
                         {/* Button for Learn More */}
                         <a href="#" className="learn-more" onClick={handleLearnMore}>Learn More</a>
                     </div>
-                    {/* Optional: Display message after actions */}
+                    {/* Display message after actions */}
                     {message && <p>{message}</p>}
                 </div>
             </div>
